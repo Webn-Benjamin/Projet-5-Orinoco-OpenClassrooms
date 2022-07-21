@@ -1,0 +1,24 @@
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  & img {
+    max-height: 40rem;
+    width: 100%;
+    object-fit: cover;
+  }
+  & h1 {
+    position: absolute;
+    text-align: center;
+    bottom: 2rem;
+    font-size: 1.8rem;
+    color: $text-color;
+    background-color: white;
+    padding: 0.6rem 1rem;
+    border-radius: 0.6rem;
+    @media screen and (max-width: 600px) {
+      font-size: 20px;
+    }
+  }
+}

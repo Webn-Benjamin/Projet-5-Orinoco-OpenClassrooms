@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #f3e9f1;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+p {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1440px;
+  margin: auto;
+}
+@media screen and (max-width: 800px) {
+  nav {
+    flex-direction: column;
+  }
+}
+nav .logo {
+  width: 10rem;
+  margin-right: auto;
+  padding-left: 2rem;
+}
+@media screen and (max-width: 800px) {
+  nav .logo {
+    margin: 0;
+    padding: 0;
+  }
+}
+nav ul {
+  padding: 0 2rem;
+  gap: 2rem;
+  display: flex;
+  height: 4.5rem;
+}
+@media screen and (max-width: 800px) {
+  nav ul {
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+    gap: 0;
+  }
+}
+nav a {
+  text-decoration: none;
+  color: #70726e;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0rem 2rem;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+nav a:hover {
+  border-bottom: 4px solid #cd7c4c;
+}
+nav a:hover i {
+  color: #cd7c4c;
+}
+@media screen and (max-width: 800px) {
+  nav a {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+header img {
+  max-height: 40rem;
+  width: 100%;
+  object-fit: cover;
+}
+header h1 {
+  position: absolute;
+  text-align: center;
+  bottom: 2rem;
+  font-size: 1.8rem;
+  color: #70726e;
+  background-color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 0.6rem;
+}
+@media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 20px;
+  }
+}
+
+.container {
+  margin-bottom: 2rem;
+}
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1280px;
+  margin: auto;
+}
+@media screen and (max-width: 1030px) {
+  .container-grid {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  .container-grid {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+}
+.container-grid .article {
+  background-color: #70726e;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  min-width: 17rem;
+  display: grid;
+  transition-duration: 0.4s;
+  position: relative;
+}
+.container-grid .article:hover {
+  background-color: #cd7c4c;
+  transition-duration: 0.4s;
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+}
+.container-grid .article:hover .buy-it {
+  opacity: 1;
+}
+.container-grid .article .buy-it {
+  background-color: rgba(112, 114, 110, 0.2509803922);
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  opacity: 0;
+  transition-duration: 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+.container-grid .article .buy-it #add-to-cart {
+  background-color: white;
+  padding: 0.4rem 0.6rem;
+  border: none;
+  border-radius: 0.5rem;
+  transition-duration: 0.4s;
+}
+.container-grid .article .buy-it #add-to-cart:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+}
+.container-grid .article .buy-it #add-to-cart a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.4rem;
+}
+.container-grid .article-photo {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem 0.5rem 0 0;
+  margin-bottom: 3px;
+}
+.container-grid .article-desc {
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+.container-grid .article-title {
+  display: flex;
+  margin: 0rem 0rem 0.5rem;
+  align-items: center;
+}
+.container-grid .article-title h3 {
+  margin-right: auto;
+  color: #000;
+}
+.container-grid .article-title .star {
+  width: 1.25rem;
+  object-fit: cover;
+  margin-right: 0.4rem;
+}
+.container-grid .article-title .price {
+  color: #000;
+  font-weight: 900;
+  background: #f3e9f1;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #f3e9f1;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+p {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1440px;
+  margin: auto;
+}
+@media screen and (max-width: 800px) {
+  nav {
+    flex-direction: column;
+  }
+}
+nav .logo {
+  width: 10rem;
+  margin-right: auto;
+  padding-left: 2rem;
+}
+@media screen and (max-width: 800px) {
+  nav .logo {
+    margin: 0;
+    padding: 0;
+  }
+}
+nav ul {
+  padding: 0 2rem;
+  gap: 2rem;
+  display: flex;
+  height: 4.5rem;
+}
+@media screen and (max-width: 800px) {
+  nav ul {
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+    gap: 0;
+  }
+}
+nav a {
+  text-decoration: none;
+  color: #70726e;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0rem 2rem;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+nav a:hover {
+  border-bottom: 4px solid #cd7c4c;
+}
+nav a:hover i {
+  color: #cd7c4c;
+}
+@media screen and (max-width: 800px) {
+  nav a {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+header img {
+  max-height: 40rem;
+  width: 100%;
+  object-fit: cover;
+}
+header h1 {
+  position: absolute;
+  text-align: center;
+  bottom: 2rem;
+  font-size: 1.8rem;
+  color: #70726e;
+  background-color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 0.6rem;
+}
+@media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 20px;
+  }
+}
+
+header #img-banner-product {
+  max-height: 25rem;
+  object-position: 100% 40%;
+}
+
+.container-product .product-grid {
+  max-width: 1280px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  border: 1px solid red;
+}
+.container-product .product-grid .product-img {
+  background-color: white;
+}
+.container-product .product-grid .product-img #product-img {
+  width: 100%;
+}
+.container-product .product-grid .product-desc {
+  background-color: white;
+}
+.container-product .product-grid .product-desc h2 {
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=style.css.map */

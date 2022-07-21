@@ -1,0 +1,22 @@
+{
+  "name": "front",
+  "version": "1.0.0",
+  "description": "projet Orinoco",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch css/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Webn-Benjamin/Projet-5-Orinoco-OpenClassrooms.git"
+  },
+  "author": "Webn Benjamin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Webn-Benjamin/Projet-5-Orinoco-OpenClassrooms/issues"
+  },
+  "homepage": "https://github.com/Webn-Benjamin/Projet-5-Orinoco-OpenClassrooms#readme",
+  "dependencies": {
+    "sass": "^1.53.0"
+  }
+}
