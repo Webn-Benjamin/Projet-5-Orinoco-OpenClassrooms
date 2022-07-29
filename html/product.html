@@ -10,6 +10,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="../css/style.css" />
+    <script defer src="../js/product.js"></script>
   </head>
   <body>
     <nav>
@@ -27,14 +28,43 @@
     <section class="container-product">
       <div class="product-grid">
         <div class="product-img">
-          <img
+          <!-- <img
             id="product-img"
             src="../images/teddy_1.jpg"
-            alt="Image du produit"
-          />
+          /> -->
         </div>
         <div class="product-desc">
-          <h2>Ours en Peluche <span id="product-name">"Robert"</span></h2>
+          <!-- <h1>Ours en Peluche <span id="product-name">"Robert"</span></h1> -->
+          <div class="product-rates">
+            <!-- <img class="star" src="../images/star.svg" alt="nombre d'étoiles" />
+            <img class="star" src="../images/star.svg" alt="nombre d'étoiles" />
+            <img class="star" src="../images/star.svg" alt="nombre d'étoiles" />
+            <img class="star" src="../images/star.svg" alt="nombre d'étoiles" />
+            <img class="star" src="../images/star.svg" alt="nombre d'étoiles" />
+            <a href="http://">25 Avis</a>
+            <p>En stock</p> -->
+          </div>
+          <div class="desc" id="product-description">
+            <!-- <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p> -->
+          </div>
+          <h3>Choisissez votre couleur</h3>
+          <select name="product-colors" id="colors">
+                <option value="">--Choisissez la couleur--</option>
+            <!-- <option>vert</option>
+            <option>bleu</option>
+            <option>violet</option> -->
+          </select>
+          <h3>Choisissez la quantité</h3>
+          <select name="product-colors" id="quantity">
+                <option value="">--Choisissez la quantitée--</option>
+            <!-- <option>1</option>
+            <option>2</option>
+            <option>3</option> -->
+          </select>
+          <button id="buy">Ajouter au Panier</button>
         </div>
       </div>
     </section>

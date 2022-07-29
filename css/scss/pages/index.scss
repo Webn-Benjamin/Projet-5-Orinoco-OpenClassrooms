@@ -12,7 +12,7 @@
     padding: 2rem;
     max-width: 1280px;
     margin: auto;
-    @media screen and (max-width: 1030px) {
+    @media screen and (max-width: 1370px) {
       grid-template-columns: repeat(2, 1fr);
       justify-content: center;
     }
@@ -24,7 +24,6 @@
       background-color: $text-color;
       border-radius: 0.5rem;
       padding: 0.5rem;
-      min-width: 17rem;
       display: grid;
       transition-duration: 0.4s;
       position: relative;
@@ -69,6 +68,10 @@
         object-fit: cover;
         border-radius: 0.5rem 0.5rem 0 0;
         margin-bottom: 3px;
+        height: 16rem;
+        @media screen and (max-width: 1370px) {
+          height: 24rem;
+        }
       }
       &-desc {
         background-color: white;

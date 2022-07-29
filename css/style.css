@@ -118,7 +118,7 @@ header h1 {
   max-width: 1280px;
   margin: auto;
 }
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 1370px) {
   .container-grid {
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
@@ -134,7 +134,6 @@ header h1 {
   background-color: #70726e;
   border-radius: 0.5rem;
   padding: 0.5rem;
-  min-width: 17rem;
   display: grid;
   transition-duration: 0.4s;
   position: relative;
@@ -180,6 +179,12 @@ header h1 {
   object-fit: cover;
   border-radius: 0.5rem 0.5rem 0 0;
   margin-bottom: 3px;
+  height: 16rem;
+}
+@media screen and (max-width: 1370px) {
+  .container-grid .article-photo {
+    height: 24rem;
+  }
 }
 .container-grid .article-desc {
   background-color: white;
@@ -325,20 +330,96 @@ header #img-banner-product {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: auto;
-  border: 1px solid red;
+  border: 0.5rem solid #70726e;
+  border-radius: 0.5rem;
+}
+@media screen and (max-width: 1100px) {
+  .container-product .product-grid {
+    grid-template-columns: 1fr;
+  }
 }
 .container-product .product-grid .product-img {
   background-color: white;
+  display: flex;
+  align-items: center;
 }
 .container-product .product-grid .product-img #product-img {
   width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .container-product .product-grid .product-desc {
+  padding: 1rem;
   background-color: white;
 }
-.container-product .product-grid .product-desc h2 {
-  padding: 0.5rem 0;
+.container-product .product-grid .product-desc h1 {
   text-align: center;
+  margin-bottom: 2rem;
+}
+.container-product .product-grid .product-desc .product-rates {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.container-product .product-grid .product-desc .product-rates .star {
+  width: 1.25rem;
+  object-fit: cover;
+  margin-right: 0.4rem;
+}
+.container-product .product-grid .product-desc .product-rates a {
+  margin-right: 0.4rem;
+  font-size: 1.2rem;
+  color: inherit;
+}
+.container-product .product-grid .product-desc .product-rates p {
+  margin-left: auto;
+  color: green;
+  font-weight: bold;
+}
+.container-product .product-grid .product-desc #product-description {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  text-align: justify;
+}
+.container-product .product-grid .product-desc h3 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.container-product .product-grid .product-desc #colors {
+  font-size: 1rem;
+  width: 16rem;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 2rem;
+  text-align: center;
+  border: none;
+}
+.container-product .product-grid .product-desc #quantity {
+  font-size: 1rem;
+  width: 16rem;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 2rem;
+  text-align: center;
+  border: none;
+}
+.container-product .product-grid .product-desc #buy {
+  background-color: #cd7c4c;
+  padding: 0.4rem 0.6rem;
+  border: none;
+  border-radius: 0.5rem;
+  transition-duration: 0.4s;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  color: white;
+  font-size: 1.4rem;
+}
+.container-product .product-grid .product-desc #buy:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
 }
 
 /*# sourceMappingURL=style.css.map */
